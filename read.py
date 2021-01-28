@@ -25,3 +25,13 @@ print('一共有', len(new), '筆留言長度小於100') # 可以看出"new這�
 print(new[0])
 print(new[1])
 
+
+good = []
+for d in data:
+	if 'good' in d: # if後面接"運算完後會變True or Flase"的條件
+		good.append(d)
+print('一共有', len(good), '筆留言提到good')
+print(good[0])
+
+# Note: 'a' in 'abc' => 運算成True
+# Note: '1' in 'abc' => 運算成Flase
