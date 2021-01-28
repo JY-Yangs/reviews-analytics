@@ -13,4 +13,15 @@ print('檔案讀取完了, 總共有', len(data), '筆資料')
 sum_len = 0
 for d in data:
 	sum_len += len(d) # 就是sum_len = sum_len + len(d)
-print('每一筆留言的平均長度是', sum_len/len(data))
+print('留言的平均長度是', sum_len/len(data))
+
+
+
+new = []
+for d in data: # 把data這個清單裡面的東西一筆一筆的叫出來
+	if len(d) < 100:
+		new.append(d) # 如果d長度<100, 就把它裝進"new這個清單裡面"
+print('一共有', len(new), '筆留言長度小於100') # 可以看出"new這個清單"裡面有幾筆資料
+print(new[0])
+print(new[1])
+
